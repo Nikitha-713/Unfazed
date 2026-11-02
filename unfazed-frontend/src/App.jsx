@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 
-const API = "https://unfazed-8zcu.onrender.com/api";
+const API = `${import.meta.env.VITE_API_URL || "http://localhost:5000"}/api`;
 
 async function apiRequest(path, options = {}) {
   const token = localStorage.getItem("unfazedToken");
