@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 
-const API = "http://localhost:5000/api";
+const API = "https://unfazed-8zcu.onrender.com/api";
 
 async function apiRequest(path, options = {}) {
   const token = localStorage.getItem("unfazedToken");
